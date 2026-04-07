@@ -8,7 +8,7 @@ export default async function Home() {
   )
 
   // 2. 데이터 가져오기
-  const { data: posts } = await supabase.from('test_table').select('*')
+  const { data: posts } = await supabase.from('posts').select('*')
 
   return (
     <main className="p-10">
